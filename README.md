@@ -2,7 +2,7 @@
 
 Are you finding difficulty remembering all the commands that you need in order to work with Docker?
 
-Guys, don’t worry! This Docker cheat sheet will give you a quick reference to the basics of Docker that you must know to get started with it.
+Guys, don’t worry! This Docker cheatsheet will give you a quick reference to the basics of Docker that you must know to get started with it.
 
 It is designed for those who have already started learning Docker but need a handy reference to recall the concepts that they have learned
 
@@ -136,7 +136,7 @@ $> docker inspect c7337
 ```
 $> docker images
 ```
-* To delete all images:
+* Delete all images
 ```
 $> docker rmi $(docker images -q)
 ```
@@ -144,15 +144,15 @@ $> docker rmi $(docker images -q)
 ```
 $> docker rm $(docker ps --ﬁlter status=exited -q)
 ```
-* To clean an unused/dangling image:
+* Clean an unused/dangling image
 ```
 $> docker image prune
 ```
-* To remove an image that is not used in a container:
+* Remove an image that is not used in a container
 ```
 $> docker image prune -a
 ```
-* To prune the entire system:
+* Prune the entire system
 ```
 $> docker system prune
 ```
@@ -165,7 +165,7 @@ $> docker ps --ﬁlter label=traeﬁk.backend
 $> docker inspect -f '{{ .NetworkSettings.IPAddress }}' c7337
 ```
 
-## 2. Lengend
+## 2. Legend
 * Image Name
 ```
 redis, jenkins, nginx
